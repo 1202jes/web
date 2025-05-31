@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Nikolete</title>
+    <style>
+        body {
+            background: linear-gradient(180deg, #000000, #1a1a1a);
+            color: white;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #6200ff, 0 0 30px #6f00ff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            animation: pulseGlow 2s infinite;
+        }
+        img {
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            border: 5px solid transparent;
+            border-image: linear-gradient(45deg, #3700ff, #00ffff) 1;
+        }
+        img:active {
+            animation: rotateScale 1s forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes rotateScale {
+            from {
+                transform: scale(1) rotate(0deg);
+            }
+            to {
+                transform: scale(1.2) rotate(360deg);
+            }
+        }
+        @keyframes pulseGlow {
+            0%, 100% {
+                text-shadow: 0 0 10px #ffffff, 0 0 20px #0026ff, 0 0 30px #4c00ff;
+            }
+            50% {
+                text-shadow: 0 0 15px #ffffff, 0 0 30px #3700ff, 0 0 45px #2600ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola Nikolete</h1>
+    <img src="c:\Users\Admin\Downloads\animar.png" alt="Imagen animada">
+</body>
+</html>
